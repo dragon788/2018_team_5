@@ -12,7 +12,7 @@
 
 #### Local Dev Setup
 1. Clone repo
-1. Install [vagrant](www.vagrantup.com) and [virtualbox](www.virtualbox.org)
+1. Install [vagrant](https://www.vagrantup.com) and [virtualbox](https://www.virtualbox.org)
   1. [Vccw](http://vccw.cc/) recommends `vagrant plugin install vagrant-hostsupdater` or add `vccw.test 192.168.33.10` yourself for proper image display and link opening
   1. `cd vccw `
   1. `vagrant up`
