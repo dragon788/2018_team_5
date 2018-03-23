@@ -11,9 +11,9 @@
 1. Export a "File" backup and put it somewhere safe (local for dev and Google Drive?)
 
 #### Local Dev Setup
-1. Clone repo
+1. Clone repo (or download https://github.com/vccw-team/vccw/releases/download/3.18.0/vccw-3.18.0.zip and extract into a new folder)
 1. Install [vagrant](https://www.vagrantup.com) and [virtualbox](https://www.virtualbox.org)
-  1. [Vccw](http://vccw.cc/) recommends `vagrant plugin install vagrant-hostsupdater` or add `vccw.test 192.168.33.10` yourself for proper image display and link opening
+  1. [Vccw](http://vccw.cc/) recommends `vagrant plugin install vagrant-hostsupdater` or add `192.168.33.10 vccw.test` yourself for proper image display and link opening
   1. `cd vccw `
   1. `vagrant up`
 
