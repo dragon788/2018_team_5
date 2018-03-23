@@ -6,6 +6,10 @@
 
 # Everybody Wins Iowa!
 
+#### Make a backup of the client site
+1. Install All-In-One WP Migration from the plugins page
+1. Export a "File" backup and put it somewhere safe (local for dev and Google Drive?)
+
 #### Local Dev Setup
 1. Clone repo
 1. Install [vagrant](www.vagrantup.com) and [virtualbox](www.virtualbox.org)
