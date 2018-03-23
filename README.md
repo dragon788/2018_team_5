@@ -27,11 +27,11 @@ WP CLI is a command line tool for managing your WordPress installation.
 1. `vagrant ssh`
 1. `cd /vagrant/wordpress`
 1. List all users. Find the ID of the user you'd like to update.
-  * `wp user list`
+    * `wp user list`
 1. Update the user replacing "1" with the id of the user you want to update.
-  * `wp user update 1 --user_pass=$UP3RstrongP4$$w0rd`
+    * `wp user update 1 --user_pass=$UP3RstrongP4$$w0rd`
 1. Login with the new password and reset it to the one you expected
-  * Click Generate password and then just replace the suggested password with the expected one
+    * Click Generate password and then just replace the suggested password with the expected one
 
 ---
 
