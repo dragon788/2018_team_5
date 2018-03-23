@@ -1,0 +1,21 @@
+= Pena Lite change log =
+
+Version 1.0.8 - October 9, 2017
+- added post thumbnails image sizes - better website performance
+- added new option inside the Customizer - front page “First Content Block” - disable child page featured image and title link from the Customizer
+
+Version 1.0.7 - April 17, 2017
+- new .pot file
+- small fix for the site identity
+
+Version 1.0.6 - April 15, 2017
+- fixes for the accessibility & admin theme info part
+
+Version 1.0.5 - April 13, 2017
+- added blank page template for the page builders
+
+Version 1.0.3, 1.0.4 - February 13, 2017
+- new screenshot.png file and small fix inside the style.css for the top image background
+
+Version 1.0.2 - February 10, 2017
+- small fixes for the accessibility
