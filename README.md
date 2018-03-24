@@ -44,3 +44,7 @@ WP CLI is a command line tool for managing your WordPress installation.
 * Host: Wordpress.org ?
 
 ---
+
+
+Tools:
+create clip paths: https://bennettfeely.com/clippy/
