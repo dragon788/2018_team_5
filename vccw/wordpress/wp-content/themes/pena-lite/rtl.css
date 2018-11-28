@@ -1,0 +1,557 @@
+/*
+Theme Name: Pena Lite
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+http://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+blockquote {
+	margin: 0 2.25em 1.75em 1.75em;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+blockquote:before {
+	right: -.6em;
+	left: auto;
+}
+
+blockquote blockquote {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+blockquote.alignright,
+blockquote.aligncenter {
+	margin-right: 2em;
+	margin-left: auto;
+}
+
+blockquote.alignleft {
+	margin-right: 3.5em;
+	margin-left: auto;
+}
+
+ul,
+ol {
+	padding-right: 1.75em;
+	padding-left: 0;
+}
+
+li > ul,
+li > ol {
+	margin-right: .4375em;
+	margin-left: auto;
+}
+
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+	margin-left: -5px;
+	margin-right: auto;
+}
+
+textarea {
+	padding-right: 3px;
+	padding-left: 0;
+}
+
+/*-- Header */
+
+.site-header {
+	left: auto;
+	right: 0;
+}
+.site-branding {
+    float: right;
+}
+#site-navigation {
+    float: left;
+    text-align: right;
+}
+.menu-toggle {
+    right: auto;
+	left: 2rem;
+}
+.alternative-menu .menu-toggle {
+    right: auto;
+	left: auto;
+}
+.fixed-menu .toggled .menu-primary-menu-container {
+	left: auto;
+	right: 0;
+}
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+
+.main-navigation ul {
+	padding-left: auto;
+	padding-right: 0;
+}
+
+.main-navigation ul ul {
+	padding-left: 0;
+	padding-right: 1.75em;
+}
+
+/* Small menu. */
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	text-align: left;
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text:focus {
+	left: auto;
+	right: 5px;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignright {
+	float: right;
+	margin: .875em 0 .875em 1.75em;
+}
+
+.alignleft {
+	float: left;
+	margin: .875em 1.75em .875em 0;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget ul ul {
+	padding-left: 0;
+	padding-right: .875em;
+}
+.widget ul ul li:before {
+	margin-right: -.875em;
+	margin-left: .4375em;
+}
+
+/* Calendar */
+
+td#prev {
+	text-align: right;
+}
+
+td#next {
+	text-align: left;
+}
+
+/* Recent Comments */
+
+/* Archives */
+.widget .post-count {
+	float: left;
+	padding-right: .4375em;
+	padding-left: 0;
+}
+
+.widget_archive a,
+.widget_categories a {
+	padding-left: .4375em;
+	padding-right: 0;
+}
+
+.widget_archive a:before,
+.widget_categories a:before {
+	right: 0;
+	left: auto;
+}
+
+/* Make sure select elements fit in widgets. */
+.widget select {
+	margin-right: 1px;
+	margin-left: auto;
+}
+#secondary .widget-title:after {
+    left: 0;
+	right: 50%;
+    margin-left: 0;
+	margin-right: -5px;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.blog .entry-meta .posted-on a,
+.single .entry-meta .posted-on a,
+.search .entry-meta .posted-on a,
+.archive .entry-meta .posted-on a {
+	border-right: none;
+	border-left: none;
+}
+
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+
+.comment .comment-metadata span {
+	margin: 0 0 0 .75em;
+}
+.comment span.reply + span.edit-link:before {
+   padding-right: 0;
+   padding-left: .25em;
+}
+.comment .avatar {
+	float: right;
+	margin-left: .875em;
+	margin-right: 0;
+}
+#cancel-comment-reply-link {
+	float: left;
+}
+.comment-form label {
+	margin-right: 0;
+	margin-left: .875em;
+}
+
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+/* Front Page */
+.featured-content {
+	border-left: 1px solid #efefef;
+	border-right: none;
+}
+.content-caption {
+	left: auto;
+	right: 0;
+}
+
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+/*-- Give */
+.second-block .give-form-wrap,
+.donation-form {
+    text-align: right;
+}
+.give-form-wrap {
+	text-align: right;
+}
+.site-footer .give-form-wrap  {
+	text-align: right;
+}
+.site-footer form[id*=give-form] .give-donation-amount .give-currency-symbol.give-currency-position-before {
+    border-right: 1px solid #000;
+	border-left: none;
+}
+form[id*=give-form] .give-donation-amount .give-currency-symbol.give-currency-position-before {
+    border-right: 1px solid #efefef;
+	border-left: none;
+}
+.block-one .give-form-wrap,
+.block-six .give-form-wrap {
+	text-align: right;
+}
+
+/* Jetpack */
+.contact-form {
+    text-align: right;
+}
+
+
+/* 404 */
+
+.search input.search-submit {
+    float: left;
+}
+
+
+@media screen and ( min-width: 55em ) {
+	/*-- Header */
+	.site-header.front {
+		left: 0;
+		right: 0;
+	}
+	.alternative-menu .site-header.front {
+		left: 0;
+		right: 0;
+	}
+	#site-navigation {
+		text-align: left;
+	}
+	.main-navigation li {
+		margin: 0 0 0 1.75em;
+	}
+	.main-navigation ul ul {
+		float: right;
+		margin-right: -0.875em;
+		margin-left: 0;
+			right: -999em;
+			left: auto;
+		text-align: right;
+	}
+	.main-navigation ul ul li {
+		padding: 0.4375em 0 0.4375em 1.75em;
+	}
+	.main-navigation ul > li.menu-item-has-children,
+	.main-navigation ul > li.page_item_has_children {
+		margin-right: 2.625em;
+	}
+	.main-navigation ul > li.menu-item-has-children > a:after,
+	.main-navigation ul > li.page_item_has_children > a:after {
+			left: -.75em;
+			right: auto;
+			transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		-o-transform: rotate(-90deg);
+	}
+	.main-navigation ul ul > li.menu-item-has-children,
+	.main-navigation ul ul > li.page_item_has_children {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.main-navigation ul ul > li.menu-item-has-children > a:after,
+	.main-navigation ul ul > li.page_item_has_children > a:after {
+		left: -1em;
+		right: auto;
+	}
+	.main-navigation ul ul ul {
+		left: 0;
+		right: -999em;
+	}
+	.main-navigation ul li:hover > ul,
+	.main-navigation ul li.focus > ul {
+		left: auto;
+		right: auto;
+	}
+	.main-navigation ul ul li:hover > ul,
+	.main-navigation ul ul li.focus > ul {
+		right: auto;
+		left: 100%;
+	}
+	.error404 .widget-areas .widget-area {
+		float: right;
+		margin-left: 5%;
+		margin-right: 0;
+	}
+	.error404 .widget-areas .widget-area:last-of-type {
+		margin-left: 0;
+		margin-right: auto;
+	}
+	.footer-widgets > div:nth-child(1):nth-last-child(3) {
+		float: right;
+		margin-left: 5%;
+		margin-right: 0;
+	}
+	.footer-widgets > div:nth-child(2):nth-last-child(2),
+	.footer-widgets > div:nth-child(3):nth-last-child(1) {
+		float: right;
+		margin-left: 5%;
+		margin-right: 0;
+	}
+	.footer-widgets > div:nth-child(1):nth-last-child(3):last-of-type,
+	.footer-widgets > div:nth-child(2):nth-last-child(2):last-of-type,
+	.footer-widgets > div:nth-child(3):nth-last-child(1):last-of-type {
+		margin-left: 0;
+		margin-right: auto;
+	}
+	.footer-widgets > div:nth-child(1):nth-last-child(2),
+	.footer-widgets > div:nth-child(2):nth-last-child(1) {
+		float: right;
+		margin-left: 6%;
+		margin-right: 0;
+	}
+	.footer-widgets > div:nth-child(1):nth-last-child(2):last-of-type,
+	.footer-widgets > div:nth-child(2):nth-last-child(1):last-of-type {
+		margin-right: auto;
+		margin-left: 0;
+	}
+	.entry-footer span {
+		margin: 0 0 0 1.75em;
+	}
+	.comment-navigation .nav-previous,
+	.posts-navigation .nav-previous,
+	.post-navigation .nav-previous {
+		float: right;
+		padding-right: 0;
+		padding-left: 10px;
+	}
+	.comment-navigation .nav-next,
+	.posts-navigation .nav-next,
+	.post-navigation .nav-next {
+		float: left;
+		padding-right: 10px;
+		padding-left: 0;
+	}
+	blockquote {
+		margin-right: 3.5em;
+		margin-left: 0;
+	}
+	blockquote.alignleft {
+		margin-right: 3em;
+		margin-left: 0;
+	}
+	blockquote:before {
+		left: auto;
+		right: -.6em;
+	}
+	.single .entry-footer span {
+		border-left: 1px solid #000;
+		border-right: none;
+		margin: 0 0 0 10px;
+		padding-right: 0;
+		padding-left: 10px;
+	}
+	.single .entry-footer span:last-child {
+		border-right: none;
+		border-left: none;
+	}
+	.fixed-menu .toggled .menu-primary-menu-container {
+		left: auto;
+		right: auto;
+	}
+	[id*=give-form] div#give-sidebar-left {
+		float: right;
+	}
+	[id*=give-form] div.summary {
+		float: left;
+	}
+	
+	.singular .content-area {
+		float: right;
+		margin: 0 0 0 -25%;
+	}
+	.singular .site-main {
+		margin: 0 0 0 32%;
+	}
+	.singular .site-content .widget-area {
+		float: left;
+	}
+	.infinite-loader {
+		margin-left: 0;
+		margin-right: 32%;
+	}
+	.blog .entry-header,
+	.archive .entry-header,
+	.page-template-right-column-page-php .entry-header,
+	.page-title,
+	.search-no-results .page-header,
+	.error404 .page-header {
+		float: right;
+	}
+	.search .entry-header {
+		float: right;
+	}
+	.blog .entry-content,
+	.archive .entry-content,
+	.page-template-right-column-page-php .entry-content,
+	.taxonomy-description,
+	.search-no-results .page-content,
+	.error404 .page-content {
+		float: left;
+	}
+	.search .entry-summary,
+	.search .entry-content {
+		float: left;
+	}
+	.blog .sidebar-right-layout .entry-meta > span,
+	.archive .sidebar-right-layout .entry-meta > span,
+	.search .sidebar-right-layout .entry-meta > span {
+		margin-right: 0;
+		margin-left: 10px;
+	}
+	blockquote.alignleft,
+	blockquote.aligncenter {
+		margin-left: auto;
+		margin-right: 0;
+	}
+	.blog .entry-meta a,
+	.search .entry-meta a,
+	.archive .entry-meta a {
+		border-left: 1px solid #777;
+		border-right: none;
+		padding: 0 0 0 10px;
+	}
+	.list-layout .entry-meta span a,
+	.search .entry-meta a {
+		border-right: none;
+		border-left: none;
+	}
+}
+
+@media screen and ( min-width: 70em ) {
+	.main-navigation li {
+		margin-right: auto;
+		margin-left: 0;
+		margin-right: 2.75em;
+		margin-left: 0;
+	}
+	.main-navigation ul > li.menu-item-has-children,
+	.main-navigation ul > li.page_item_has_children {
+		margin-right: .875em;
+	}
+	.comment .comment-content {
+		float: left;
+	}
+	.comment .comment-meta {
+		float: right;
+	}
+	.comment .avatar {
+			left: auto;
+			right: -4em;
+	}
+}
+
+@media screen and ( min-width: 80em ) {
+	/* Front Page */
+	.content-caption {
+		right: 10%;
+		left: auto;
+		text-align: right;
+	}
+	.content-caption .entry-content .button {
+		text-align: right;
+	}
+}
+
+@media screen and ( min-width: 1120px ) {
+	.comment-list {
+		margin-right: 20px;
+		margin-left: 0;
+	}
+}
